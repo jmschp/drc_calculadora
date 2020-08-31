@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'partials/menu.html' %}
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Nome</th>
+                    <th>Concentração em mg</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                    <tr>
+                        <td>{{ produto.marca }}</td>
+                        <td>{{ produto.nome }}</td>
+                        <td>{{ produto.concentracao_cbd_mg }}</td>
+                        <td>{{ produto.preco }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

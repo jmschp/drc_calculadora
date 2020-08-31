@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'partials/menu.html' %}
+<form action="calc_resultado" method="post">
+    {{ form.as_table }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Calcular</button>
+</form>
+{% endblock content %}

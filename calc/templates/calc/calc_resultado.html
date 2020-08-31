@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'partials/menu.html' %}
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade de ml:</th>
+                <th>Concentração de CBD em mg:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{produto}}</td>
+                <td>{{qtd_ml}}</td>
+                <td>{{concentracao_cbd_mg}}</td>
+            </tr>
+        </tbody>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Sua prescrição, quantas gotas por dose:</th>
+                <th>Dose prescrita (em mg)</th>
+                <th>Um frasco tem (gotas)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{gotas_dose}}</td>
+                <td>{{mg_dose}}</td>
+                <td>{{total_gotas}}</td>
+            </tr>
+        </tbody>
+{% endblock content %}
