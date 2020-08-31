@@ -1,1 +1,1 @@
-web: gunicorn fidly.wsgi
+web: gunicorn drc_calculadora.wsgi
