@@ -23,9 +23,12 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '+lb7@&9zh!cg5ljoy@)89^m^_zn1xcpg4l-a_wl0)!tq!-$j2j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["intense-anchorage-19225.herokuapp.com"]
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    "drc-calculadora.herokuapp.com"
+    ]
 
 
 # Application definition
