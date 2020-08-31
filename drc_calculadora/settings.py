@@ -25,7 +25,7 @@ SECRET_KEY = '+lb7@&9zh!cg5ljoy@)89^m^_zn1xcpg4l-a_wl0)!tq!-$j2j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["intense-anchorage-19225.herokuapp.com"]
 
 
 # Application definition
